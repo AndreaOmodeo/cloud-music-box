@@ -4,7 +4,7 @@ import { AudioPlayer } from "@/src/audio/audio-player"
 import { PlayerCard } from "@/src/components/player-card"
 import { FileStoreProvider } from "@/src/stores/file-store"
 import { PlayerStoreProvider, usePlayerStore } from "@/src/stores/player-store"
-import { DynamicBackground } from "@/src/components/dynamic-background"
+// import { DynamicBackground } from "@/src/components/dynamic-background"
 import { Box, Fade, Button } from "@mui/material"
 import {
   SnackbarKey,
@@ -68,7 +68,7 @@ const AppMain = ({ children }: { children: React.ReactNode }) => {
       }}
     >
       <ThemeChanger />
-      <DynamicBackground />
+      {/* <DynamicBackground /> */}
       <AudioPlayer />
       <Box
         component="div"
