@@ -197,7 +197,7 @@ export default function Page() {
         <Toolbar>
           <HomeRounded />
           <Typography sx={{ mx: 1 }} variant="h6">
-            Home
+            Musica
           </Typography>
           <Box component="div" sx={{ flexGrow: 1 }}></Box>
           {downloadingCount > 0 ? (
