@@ -193,6 +193,7 @@ export const useFileStore = () => {
 
       const response = await state.driveClient
         .api(`/me/drive/items/${id}/children`)
+        .query({ $top: 500 })
         .get()
       const children = (
         await Promise.all(
