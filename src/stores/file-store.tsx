@@ -141,6 +141,7 @@ export const useFileStore = () => {
 
       const response = await state.driveClient
         .api(`/me/drive/items/${id}`)
+        .query({ $top: 500 })
         .get()
       const item = await makeFileItemFromResponseAndSync(response, state.fileDb)
       return item
